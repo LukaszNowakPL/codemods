@@ -1,17 +1,21 @@
 {
-  "name": "@ToDo: zmienić cały",
+  "name": "codemods/consumer-application",
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "test:codemods": "npm --prefix library run test",
-    "codemods": "npx codeshift ./consumer/src/ --parse=tsx --extensions=ts,tsx --transform=./library/codemods/v2/breadcrums.js",
-    "prepare": "husky install"
+    "lint": "eslint --max-warnings=0 src"
   },
   "eslintConfig": {
     "extends": "react-app"
   },
   "dependencies": {
-    "husky": "^8.0.3",
-    "prettier": "^3.0.3"
+    "@types/react": "^18.2.23",
+    "@types/react-dom": "^18.2.8",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-config-react-app": "^7.0.1",
+    "eslint-plugin-jest-dom": "^5.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.2.2"
   }
 }

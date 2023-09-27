@@ -8,9 +8,9 @@ module.exports = {
     {
       displayName: "codemods",
       testEnvironment: "node",
-      moduleNameMapper: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
+      moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"],
       roots: ["codemods"],
-      transform: {'^.+\\.(tsx|js|ts)?$': 'ts-jest'},
+      transform: { "^.+\\.(tsx|js|ts)?$": "ts-jest" },
     },
   ],
 };
