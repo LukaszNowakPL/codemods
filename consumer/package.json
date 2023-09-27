@@ -1,0 +1,17 @@
+{
+  "name": "@ToDo: zmienić cały",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "test:codemods": "npm --prefix library run test",
+    "codemods": "npx codeshift ./consumer/src/ --parse=tsx --extensions=ts,tsx --transform=./library/codemods/v2/breadcrums.js",
+    "prepare": "husky install"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "dependencies": {
+    "husky": "^8.0.3",
+    "prettier": "^3.0.3"
+  }
+}
