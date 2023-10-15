@@ -5,7 +5,7 @@
   "scripts": {
     "install:all": "npm install && npm --prefix consumer install && npm --prefix library install",
     "test:codemods": "npm --prefix library run test",
-    "codemods": "npx jscodeshift ./consumer/src/ --parse=tsx --extensions=ts,tsx --transform=./library/codemods/v2/breadcrumbs.js",
+    "codemods": "npx jscodeshift ./consumer/src/ --parser=tsx --extensions=ts,tsx --transform=./library/codemods/v2/breadcrumbs.js",
     "prepare": "husky install"
   },
   "eslintConfig": {
