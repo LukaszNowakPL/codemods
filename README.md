@@ -24,7 +24,7 @@ Please note that it will perform changes over `BreadcrumbsSection` component, ho
 
 ## Presentation
 
-The repository will be upgraded soon after React Alicante conference with presentation displayed during lightning talk.
+The repository contains pdf presentations displayed during meetings. Please note the language prefix used on file's name.
 
 ## Contact
 
